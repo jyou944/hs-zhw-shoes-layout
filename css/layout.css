@@ -24,4 +24,58 @@
 
 /* Positioning Classes */
 
+#wood div.wrapper {
+  display: grid;
+  gap: 20px 20px;
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "sale sale sale"
+    "header header ."
+    "featured featured archive"
+    "promo1 promo2 promo3";
+}
 
+#sale {
+  grid-area: sale;
+}
+
+#wood div.wrapper > h2 {
+  grid-area: header;
+  padding-top: 10px; 
+}
+
+#featured {
+  grid-area: featured;
+}
+
+#archive {
+  grid-area: archive;
+}
+
+#promo1 {
+  grid-area: promo1;
+  
+}
+
+#promo2 {
+  grid-area: promo2;
+  
+}
+
+#promo3 {
+  grid-area: promo3;
+  
+}
+
+/* Footer Positioning */
+
+#details div.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.border_right {
+  padding: 15px;
+}
